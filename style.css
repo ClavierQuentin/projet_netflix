@@ -183,7 +183,6 @@ label{
 }
 .input_checkbox + label::after{
     content: url(img/checkmark.png);
-	speak: never; /* Pour être sûr que le lecteur d'écran ne lira pas "fois" */
 	position: absolute;
 	left: 0.1em;
 	font-size: 1.6em;
