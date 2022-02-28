@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/netflix (1).png" type="image/x-icon">
     <title>Netflix</title>
 </head>
 <body>
@@ -17,28 +18,28 @@
       </div>
   </header>
   <main>
-      <div class="main">
+      <div id="pageAccueil" class="main">
             <div>
               <h1>Qui est-ce ?</h1>
             </div>
             <div class="profils">
-              <div class="profil">
+              <a href="#" class="profil">
                 <div class="profil_utilisateur">
                     <img class="faces utilisateur" src="img/face1.png" alt="">
                 </div>
                 <div class="sous_titre">
                     <p>Margot</p>
                 </div>
-              </div>
-              <div class="profil">
+            </a>
+              <a href="#" class="profil">
                 <div class="profil_utilisateur">
                     <img class="faces utilisateur" src="img/face2.png" alt="">
                 </div>
                 <div class="sous_titre">
                     <p>Quentin</p>
                 </div>
-              </div>
-              <div class="profil">
+            </a>
+              <a href="#" class="profil">
                 <div class="croix">
                     <img class="faces bouton-plus" src="img/bouton-plus.png" alt="">
                 </div>
@@ -46,11 +47,34 @@
                     <p>Ajouter un profil</p>
                 </div>
               </div>
-            </div>
-            <div class="gestion_profil">
+            </a>
+            <a href="#" id="gerer_profil" class="gestion_profil">
                 <p> Gérer les profils</p>
-            </div>
+            </a>
       </div>
-  </main>  
+      <div id="bloc_ajouter" class="ajouter_profil">
+        <div class="ligne_1">
+            <h1>Ajouter un profil</h1>
+            <p>Ajoutez un profil pour un nouvel utilisateur Netflix.</p>
+        </div>
+        <div class="ligne_2">
+            <div>
+                <img class="faces_2" src="https://occ-0-3007-56.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABX_cjFqekMWlVv9AS6vI54p7W5uxkdnDz0RZ_BWg2XRBOMNYXnJRhtOnpMappsaT2-4TP8mjyaBTNLX-mLEJHl8GIfn_.png?r=fcc" alt="">
+            </div>
+            <div>
+                <input class="input_nom" type="text" placeholder="Nom">
+            </div>
+            <div class="checkbox">
+                <input class="input_checkbox" type="checkbox" name="" id="enfant">
+                <label for="enfant">Enfant ?</label>
+            </div>
+        </div>
+        <div class="ligne_3">
+            <a href="#"><div class="bouton_continuer"><p>Continuer</p></div></a>
+            <a href="#"><div class="bouton_annuler"><p>Annuler</p></div></a>
+        </div>
+      </div>
+  </main>
+  <script src="script.js"></script>  
 </body>
 </html>
