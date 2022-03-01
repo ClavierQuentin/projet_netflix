@@ -12,17 +12,20 @@
     <title>Netflix</title>
 </head>
 <body>
+    <!--HEADER-->
   <header>
       <div>
           <img id="logo" src="img/netflix.png" alt="logo Netflix">
       </div>
   </header>
   <main>
+      <!--------------------------------------PAGE D'ACCUEIL------------------------------>
       <div id="pageAccueil" class="main">
             <div>
               <h1>Qui est-ce ?</h1>
             </div>
             <div class="profils">
+                <!---------------------------PROFILS------------------->
               <a href="#" class="profil">
                 <div class="profil_utilisateur">
                     <img class="faces utilisateur" src="img/face1.png" alt="">
@@ -30,7 +33,7 @@
                 <div class="sous_titre">
                     <p>Margot</p>
                 </div>
-            </a>
+             </a>
               <a href="#" class="profil">
                 <div class="profil_utilisateur">
                     <img class="faces utilisateur" src="img/face2.png" alt="">
@@ -38,8 +41,9 @@
                 <div class="sous_titre">
                     <p>Quentin</p>
                 </div>
-            </a>
-              <a href="#" class="profil">
+              </a>
+              <!------------------------ICONE AJOUTER PROFIL------------------->
+              <a href="#" id="ajouter_profil" class="profil">
                 <div class="croix">
                     <img class="faces bouton-plus" src="img/bouton-plus.png" alt="">
                 </div>
@@ -48,10 +52,12 @@
                 </div>
               </div>
             </a>
-            <a href="#" id="gerer_profil" class="gestion_profil">
+            <!---------------------------BOUTON GERER LES PROFILS-------------->
+            <a href="#" class="gestion_profil" id="gerer_profils">
                 <p> Gérer les profils</p>
             </a>
       </div>
+      <!-----------------------------------PAGE AJOUT DE PROFIL------------------>
       <div id="bloc_ajouter" class="ajouter_profil">
         <div class="ligne_1">
             <h1>Ajouter un profil</h1>
@@ -71,9 +77,44 @@
         </div>
         <div class="ligne_3">
             <a href="#"><div class="bouton_continuer"><p>Continuer</p></div></a>
-            <a href="#"><div class="bouton_annuler"><p>Annuler</p></div></a>
+            <a href="#" id="bouton_annuler"><div class="bouton_annuler"><p>Annuler</p></div></a>
         </div>
       </div>
+      <!---------------------------------PAGE GESTION DES PROFILS-------------------------->
+      <div id="pageGestion" class="gestion">
+        <div>
+          <h1>Gestion des profils :</h1>
+        </div>
+        <div class="profils">
+          <a href="#" class="profil">
+            <div class="profil_utilisateur">
+                <img class="faces utilisateur" src="img/profil1.png" alt="">
+            </div>
+            <div class="sous_titre">
+                <p>Margot</p>
+            </div>
+        </a>
+          <a href="#" class="profil">
+            <div class="profil_utilisateur">
+                <img class="faces utilisateur" src="img/profil2.png" alt="">
+            </div>
+            <div class="sous_titre">
+                <p>Quentin</p>
+            </div>
+        </a>
+          <a href="#" id="ajouter_profil_2" class="profil">
+            <div class="croix">
+                <img class="faces bouton-plus" src="img/bouton-plus.png" alt="">
+            </div>
+            <div class="sous_titre">
+                <p>Ajouter un profil</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+            <p class="bouton_continuer" id="gestion_terminer">Terminé</p>
+        </a>
+  </div>
   </main>
   <script src="script.js"></script>  
 </body>

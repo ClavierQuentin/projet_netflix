@@ -5,236 +5,262 @@ body{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1.5px;
 }
-main{
-    width: 75%;
-    margin: auto;
-}
 p{
     letter-spacing: 2px;
-
 }
 a{
     text-decoration: none;
 }
-header{
-    background: linear-gradient(to bottom,#060606, #070707, #080808, #090909, #0a0a0a, #0b0b0b, #0c0c0c, #0d0d0d, #0e0e0e, #0f0f0f, #101010, #111111, #121212, #131313, #141414 );
-    height: 75px;
-}
-h1{
-    color: white;
-    font-size: 60px;
-}
-.sous_titre p{
-    color: grey;
-    font-weight: bold;
-    font-size: 20px;
-}
-#logo{
-    width: 100px;
-    position: relative;
-    left: 60px;
-    top: -13px;
-}
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-.profils{
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-}
-.faces{
-    width: 160px;
-    height: 160px;
-    border-radius: 5px;
-}
-.profil{
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.croix{
-    border-radius: 5px;
-    width: 160px;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
+/*---------HEADER------*/
+    header{
+        background: linear-gradient(to bottom,#060606, #070707, #080808, #090909, #0a0a0a, #0b0b0b, #0c0c0c, #0d0d0d, #0e0e0e, #0f0f0f, #101010, #111111, #121212, #131313, #141414 );
+        height: 75px;
+    }
+    #logo{
+        width: 100px;
+        position: relative;
+        left: 60px;
+        top: -13px;
+    }
 
+main{
+    width: 75%;
+    margin: auto;
+    margin-top: 100px;
+    transform: scale(1.1);
 }
-.bouton-plus{
-    width: 100px;
-    height: 100px;
-}
-.gestion_profil{
-    border: 1px grey solid;
-    color: grey;
-    margin-top: 60px;
-    font-weight: bold;
-    font-size: 20px;
-    width: 250px;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gestion_profil:hover{
-    border-color: white;
-    color: white;
-}
-.profil_utilisateur{
-    width: 164px;
-    height: 164px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.profil:hover .utilisateur{
-    border: 4px white solid;
-}
-.profil:hover p{
-    color: white;
-}
-.profil:hover .croix{
-    background-color: #f0f0f0;
-}
-.ajouter_profil{
-    width: 700px;
-    margin-left: 20%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 30px;
-    display: none;
-}
-.ajouter_profil p{
-    color: grey;
-    font-weight: bold;
-    font-size: 20px;
-}
-.ligne_1{
-    border-bottom: solid 0.1px #333333;
-}
-.ligne_2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: solid 0.1px #333333;
-    padding-bottom: 30px;
-}
-.input_nom{
-    background-color: grey;
-    width: 370px;
-    height: 39px;
-    border: none;
-}
-.input_nom::placeholder{
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #cccccc;
-    position: relative;
-    left: 12px;
-    top: 5px;
-}
-.faces_2{
-    width: 140px;
-    height: 140px;
-    border-radius: 5px;
-}
-label{
-    color: white;
-    font-size: 20px;
-    letter-spacing: 0.7px;
-    font-weight: 900;
-    position: relative; /* permet de positionner la checkbox */
-	padding-left: 1.7em;
-    cursor: pointer; 
-}
-.input_checkbox{
-    position: absolute;
-    left: 0;
-    opacity: 0.01;
-}
-
-.checkbox{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.input_checkbox + label::before{
-    content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 1.4em;
-	height: 1.4em;
-	border: 1px solid #333333;
-	background: #141414;
-	transition: all .275s;
-}
-.input_checkbox + label::after{
-    content: url(img/checkmark.png);
-	position: absolute;
-	left: 0.1em;
-	font-size: 1.6em;
-	color: grey;
-	line-height: 0;
-	transition: all .1s; /* Petite transition */
-}
-[type="checkbox"]:not(:checked) + label::after {
-	opacity: 0;
-	transform: scale(0);
-}
-
-/* Aspect cochée */
-[type="checkbox"]:checked + label::after {
-	opacity: 1;
-	transform: scale(1);
-}
-.ligne_3{
-    display: flex;
-    gap: 20px;
-}
-.bouton_continuer{
-    background-color: #ffffff;
-    height: 40px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bouton_continuer p{
-    color: black;
-}
-.bouton_continuer:hover{
-    background-color: red;
-}
-.bouton_continuer:hover p{
-    color: white;
-}
-.bouton_annuler{
-    border: 1px grey solid;
-    color: grey;
-    font-weight: bold;
-    font-size: 20px;
-    width: 200px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bouton_annuler:hover{
-    border-color: white;
-}
-.bouton_annuler:hover p{
-    color: white;
-}
+/*--------------PAGE D'ACCUEIL-----------*/
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+        h1{
+            color: white;
+            font-size: 60px;
+        }
+        .profils{
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+        /*----------------PROFILS-------------*/
+        .profil{
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .profil_utilisateur{
+            width: 164px;
+            height: 164px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .faces{
+            width: 160px;
+            height: 160px;
+            border-radius: 5px;
+        }
+        .sous_titre p{
+            color: grey;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .profil:hover .utilisateur{
+            border: 4px white solid;
+        } 
+        .profil:hover p{
+            color: white;
+        }
+        /*------------ICONE AJOUTER PROFIL------------*/
+        .croix{
+            border-radius: 5px;
+            width: 160px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        .bouton-plus{
+            width: 100px;
+            height: 100px;
+        }
+        .profil:hover .croix{
+            background-color: #f0f0f0;
+        }
+        /*----------------BOUTON GERER LES PROFILS-----------*/
+        .gestion_profil{
+            border: 1px grey solid;
+            color: grey;
+            margin-top: 60px;
+            font-weight: bold;
+            font-size: 20px;
+            width: 250px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gestion_profil:hover{
+            border-color: white;
+            color: white;
+        }
+/*--------PAGE AJOUT DE PROFIL--------*/
+    .ajouter_profil{
+        width: 700px;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 30px;
+        display: none;
+    }
+    /*----------PREMIERE LIGNE---------*/
+        .ligne_1{
+            border-bottom: solid 0.1px #333333;
+        }
+        .ajouter_profil p{
+            color: grey;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    /*------------DEUXIEME LIGNE----------*/
+        .ligne_2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 0.1px #333333;
+            padding-bottom: 30px;
+        }
+        .faces_2{
+            width: 140px;
+            height: 140px;
+            border-radius: 5px;
+        }
+        .input_nom{
+            background-color: grey;
+            width: 370px;
+            height: 39px;
+            border: none;
+        }
+        .input_nom::placeholder{
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #cccccc;
+            position: relative;
+            left: 12px;
+            top: 5px;
+        }
+        .checkbox{
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        /*------CHECKBOX PERSONNALISEE-----*/
+            label{
+                color: white;
+                font-size: 20px;
+                letter-spacing: 0.7px;
+                font-weight: 900;
+                position: relative; /* permet de positionner la checkbox */
+                padding-left: 1.7em;
+                cursor: pointer;  /*permet de modifier le curseur*/
+            }
+            .input_checkbox{
+                position: absolute;
+                left: 0;
+                opacity: 0.01;  /*permet de rendre invisible la checkbox d'origine*/
+            }
+            .input_checkbox + label::before{ /*création du cadre de la checkbox vide*/
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1.4em;
+                height: 1.4em;
+                border: 1px solid #333333;
+                background: #141414;
+                transition: all .275s;
+            }
+            .input_checkbox + label::after{ /*remplissage de la checkbox*/
+                content: url(img/checkmark.png);
+                position: absolute;
+                left: 0.1em;
+                font-size: 1.6em;
+                color: grey;
+                line-height: 0;
+                transition: all .1s; /* Petite transition */
+            }
+            /* Aspect cochée */
+            [type="checkbox"]:checked + label::after {
+                opacity: 1;
+                transform: scale(1);
+            }
+            [type="checkbox"]:not(:checked) + label::after {
+                opacity: 0;
+                transform: scale(0);
+            }
+    /*----------TROISIEME LIGNE--------*/
+        .ligne_3{
+            display: flex;
+            gap: 20px;
+        }
+        .bouton_continuer{
+            background-color: #ffffff;
+            height: 40px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bouton_continuer p{
+            color: black;
+        }
+        .bouton_continuer:hover{
+            background-color: red;
+        }
+        .bouton_continuer:hover p{
+            color: white;
+        }
+        .bouton_annuler{
+            border: 1px grey solid;
+            color: grey;
+            font-weight: bold;
+            font-size: 20px;
+            width: 200px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bouton_annuler:hover{
+            border-color: white;
+        }
+        .bouton_annuler:hover p{
+            color: white;
+        }
+    /*--------PAGE GESTION DES PROFILS--------*/
+    .gestion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        margin-top: 90px;
+        transform: scale(1.1);
+    }
+    #gestion_terminer{
+        color: black;
+        font-weight: bolder;
+        width: 130px;
+        margin-top: 50px;
+    }
+    #gestion_terminer:hover{
+        color: white;
+    }
